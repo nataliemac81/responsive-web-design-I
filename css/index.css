@@ -66,10 +66,80 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*Responsive*/
+
 .container {
-  width: 880px;
-  /* TB LR */
+  max-width: 900px;
   margin: 0 auto;
+}
+
+@media(max-width: 500px) {
+  .container header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav {
+    padding-top: 40px;
+  }
+
+  .container header nav a {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+  }
+
+  .container header .logo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 120px;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .container .main-content {
+    border-top: 2px solid black;
+  }
+
+  .container .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 15px; 
+  }
+
+  .container .main-content .top-content .text-content {
+    margin: 20px 0;
+    padding: 0 14px;
+  }
+
+  .container .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .container .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .container .main-content .bottom-content .text-content {
+    width: 100%;
+    height: auto;
+    padding: 20px 14px;
+  }
 }
 
 /* header */
