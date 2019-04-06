@@ -74,6 +74,66 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+@media(max-width: 800px) {
+  .container header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header .logo {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 280px;
+    background-color: white;
+  }
+
+  .container header nav {
+    padding-top: 40px;
+  }
+
+  .container header nav a {
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 20px 20px;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .container .cta .cta-text {
+    padding-bottom: 80px;
+  }
+
+  .container .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .container .main-content {
+    border-top: 2px solid black;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container .main-content .bottom-content {
+    padding-bottom: 40px;
+  }
+
+  .container .contact {
+    border-top: 2px solid black;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container footer {
+    font-size: 16px;
+  }
+}
+
+
 @media(max-width: 500px) {
   .container header{
     display: flex;
